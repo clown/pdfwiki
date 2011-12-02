@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+  PDFWiki
+  Copyright (c) 2011 clown.
+
+  Mailto: tt.clown@gmail.com
+  URL: http://cielquis.net/
+-------------------------------------------------------------------------------
+
+■What's this
+
+PDFWiki は，Wiki 記法で記述されたテキストファイルを PDF に変換するためのソフトウェア，
+およびライブラリです．現在のところ，Pukiwiki の記法のうち，以下のものに対応しています．
+
+- 通常文
+- セクション (*, **, ***, ...)
+- リスト (+, または -)
+- 画像 (#ref による指定方法)
+
+■依存ライブラリ
+
+PDFWiki は，以下のライブラリを使用しています．
+
+- iTextSharp
+  URL: http://sourceforge.net/projects/itextsharp/
+  GNU Affero General Public License ( http://www.gnu.org/licenses/agpl.html )
+
+また，テストフレームワークには NUnit ( http://www.nunit.org/ ) を使用しています．
+
+■修正履歴
+
+2011/12/02 version 0.0.1α
+- 最初の公開バージョン
