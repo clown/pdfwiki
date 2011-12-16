@@ -68,7 +68,10 @@ namespace PDFWiki {
                     else if (line[0] == '+') this.ParseBasicElement(line, ElementType.NumericList);
                     else if (line[0] == '#') this.ParseImage(line);
                 }
-                else buffer.Append(line);
+                else {
+                    if (line[line.Length - 1] == '~') line = line.Substring(0, line.Length - 1) + "\r\n";
+                    buffer.Append(line);
+                }
             }
 
             if (buffer.Length > 0) {
